@@ -46,12 +46,12 @@ io.on('connection', (socket) => {
         console.log(`User ${username} joined room ${room}`);
 
       // Get last 100 messages sent in the chat room
-      harperGetMessages(room)
-      .then((last100Messages) => {
-        // console.log('latest messages', last100Messages);
-        socket.emit('last_100_messages', last100Messages);
-      })
-      .catch((err) => console.log(err));
+      // harperGetMessages(room)
+      // .then((last100Messages) => {
+      //   // console.log('latest messages', last100Messages);
+      //   socket.emit('last_100_messages', last100Messages);
+      // })
+      // .catch((err) => console.log(err));
 
             // Add this
         let __createdtime__ = Date.now(); // Current timestamp
